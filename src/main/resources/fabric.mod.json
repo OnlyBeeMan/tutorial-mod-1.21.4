@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial mod by me!!",
+	"authors": [
+		"KING LUKASIII"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/OnlyBeeMan/tutorialmod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bee.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.bee.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.bee.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
